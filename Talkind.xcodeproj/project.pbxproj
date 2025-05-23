@@ -74,7 +74,6 @@
 				9EE5A2FD8EB7EC8FE181E38D /* Pods-Talkind.debug.xcconfig */,
 				325E24FCDC591FC2961CE645 /* Pods-Talkind.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
