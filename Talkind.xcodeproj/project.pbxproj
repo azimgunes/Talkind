@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D175788099F59CC431AB3D13 /* Pods_Talkind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88437F2009EC146DE2A4D0AC /* Pods_Talkind.framework */; };
+		3C4D500D2DE63C44004DA5D6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C4D500C2DE63C44004DA5D6 /* RealmSwift */; };
+		3CE486032DE6355200B24685 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486022DE6355200B24685 /* ProgressHUD */; };
+		3CE486062DE6357100B24685 /* SKPhotoBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486052DE6357100B24685 /* SKPhotoBrowser */; };
+		3CE486092DE6359700B24685 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486082DE6359700B24685 /* MessageKit */; };
+		3CE4860C2DE635AF00B24685 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE4860B2DE635AF00B24685 /* InputBarAccessoryView */; };
+		3CE4860F2DE6360800B24685 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE4860E2DE6360800B24685 /* YPImagePicker */; };
+		3CE486122DE6375700B24685 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486112DE6375700B24685 /* FirebaseAuth */; };
+		3CE486142DE6375700B24685 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486132DE6375700B24685 /* FirebaseCore */; };
+		3CE486162DE6375700B24685 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486152DE6375700B24685 /* FirebaseDatabase */; };
+		3CE486182DE6375700B24685 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486172DE6375700B24685 /* FirebaseFirestore */; };
+		3CE4861A2DE6375700B24685 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE486192DE6375700B24685 /* FirebaseFunctions */; };
+		3CE4861C2DE6375700B24685 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE4861B2DE6375700B24685 /* FirebaseInAppMessaging-Beta */; };
+		3CE4861E2DE6375700B24685 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE4861D2DE6375700B24685 /* FirebaseMessaging */; };
+		3CE486202DE6375700B24685 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE4861F2DE6375700B24685 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3CE486382DE63B2B00B24685 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		325E24FCDC591FC2961CE645 /* Pods-Talkind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkind.release.xcconfig"; path = "Target Support Files/Pods-Talkind/Pods-Talkind.release.xcconfig"; sourceTree = "<group>"; };
 		3C41F2912DDE44A5003E1563 /* Talkind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkind.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88437F2009EC146DE2A4D0AC /* Pods_Talkind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talkind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE5A2FD8EB7EC8FE181E38D /* Pods-Talkind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkind.debug.xcconfig"; path = "Target Support Files/Pods-Talkind/Pods-Talkind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,7 +66,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D175788099F59CC431AB3D13 /* Pods_Talkind.framework in Frameworks */,
+				3CE4861C2DE6375700B24685 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				3CE486162DE6375700B24685 /* FirebaseDatabase in Frameworks */,
+				3C4D500D2DE63C44004DA5D6 /* RealmSwift in Frameworks */,
+				3CE4861E2DE6375700B24685 /* FirebaseMessaging in Frameworks */,
+				3CE486032DE6355200B24685 /* ProgressHUD in Frameworks */,
+				3CE4861A2DE6375700B24685 /* FirebaseFunctions in Frameworks */,
+				3CE486062DE6357100B24685 /* SKPhotoBrowser in Frameworks */,
+				3CE486202DE6375700B24685 /* FirebaseStorage in Frameworks */,
+				3CE4860F2DE6360800B24685 /* YPImagePicker in Frameworks */,
+				3CE486092DE6359700B24685 /* MessageKit in Frameworks */,
+				3CE4860C2DE635AF00B24685 /* InputBarAccessoryView in Frameworks */,
+				3CE486142DE6375700B24685 /* FirebaseCore in Frameworks */,
+				3CE486182DE6375700B24685 /* FirebaseFirestore in Frameworks */,
+				3CE486122DE6375700B24685 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +91,6 @@
 			children = (
 				3C41F2932DDE44A5003E1563 /* Talkind */,
 				3C41F2922DDE44A5003E1563 /* Products */,
-				50E13DE08D87B5DFB092E802 /* Pods */,
-				6E35F06B303F9CCE861B3AF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,23 +102,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50E13DE08D87B5DFB092E802 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9EE5A2FD8EB7EC8FE181E38D /* Pods-Talkind.debug.xcconfig */,
-				325E24FCDC591FC2961CE645 /* Pods-Talkind.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6E35F06B303F9CCE861B3AF7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88437F2009EC146DE2A4D0AC /* Pods_Talkind.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,11 +109,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C41F2A42DDE44A7003E1563 /* Build configuration list for PBXNativeTarget "Talkind" */;
 			buildPhases = (
-				4891C0BAAED8448AD3481785 /* [CP] Check Pods Manifest.lock */,
 				3C41F28D2DDE44A5003E1563 /* Sources */,
 				3C41F28E2DDE44A5003E1563 /* Frameworks */,
 				3C41F28F2DDE44A5003E1563 /* Resources */,
-				3C79528959C3FBCD5BAEDB85 /* [CP] Embed Pods Frameworks */,
+				3CE486382DE63B2B00B24685 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +150,15 @@
 			);
 			mainGroup = 3C41F2882DDE44A5003E1563;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3CE486012DE6355200B24685 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				3CE486042DE6357100B24685 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */,
+				3CE486072DE6359700B24685 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				3CE4860A2DE635AF00B24685 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
+				3CE4860D2DE6360800B24685 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+				3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3C4D500B2DE63C44004DA5D6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3C41F2922DDE44A5003E1563 /* Products */;
 			projectDirPath = "";
@@ -154,48 +179,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3C79528959C3FBCD5BAEDB85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Talkind/Pods-Talkind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Talkind/Pods-Talkind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Talkind/Pods-Talkind-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4891C0BAAED8448AD3481785 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Talkind-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3C41F28D2DDE44A5003E1563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,7 +192,6 @@
 /* Begin XCBuildConfiguration section */
 		3C41F2A52DDE44A7003E1563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EE5A2FD8EB7EC8FE181E38D /* Pods-Talkind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -238,7 +220,6 @@
 		};
 		3C41F2A62DDE44A7003E1563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 325E24FCDC591FC2961CE645 /* Pods-Talkind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,6 +387,138 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C4D500B2DE63C44004DA5D6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3CE486012DE6355200B24685 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.3;
+			};
+		};
+		3CE486042DE6357100B24685 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/suzuki-0000/SKPhotoBrowser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		3CE486072DE6359700B24685 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3CE4860A2DE635AF00B24685 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		3CE4860D2DE6360800B24685 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C4D500C2DE63C44004DA5D6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C4D500B2DE63C44004DA5D6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		3CE486022DE6355200B24685 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486012DE6355200B24685 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		3CE486052DE6357100B24685 /* SKPhotoBrowser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486042DE6357100B24685 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */;
+			productName = SKPhotoBrowser;
+		};
+		3CE486082DE6359700B24685 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486072DE6359700B24685 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		3CE4860B2DE635AF00B24685 /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE4860A2DE635AF00B24685 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
+		};
+		3CE4860E2DE6360800B24685 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE4860D2DE6360800B24685 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+		3CE486112DE6375700B24685 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3CE486132DE6375700B24685 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		3CE486152DE6375700B24685 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3CE486172DE6375700B24685 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3CE486192DE6375700B24685 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3CE4861B2DE6375700B24685 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		3CE4861D2DE6375700B24685 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		3CE4861F2DE6375700B24685 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE486102DE6375700B24685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C41F2892DDE44A5003E1563 /* Project object */;
 }

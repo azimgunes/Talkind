@@ -1,70 +1,75 @@
 
-# Xcode
-#
+## macOS ##
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+## Xcode ##
 build/
 DerivedData/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
+*.xcuserstate
 *.xcscmblueprint
-*.xccheckout
 
-# Swift Package Manager
-#
+# Workspace data
+xcuserdata/
+*.xcworkspace/xcuserdata
+
+## Swift Package Manager ##
 .build/
 Packages/
-.swiftpm/xcode/package.xcworkspace/
+Package.resolved
 
-# CocoaPods
-#
+## CocoaPods ##
 Pods/
+Podfile.lock
 
-# Carthage
-#
+## Carthage ##
+Carthage/
 Carthage/Build/
 
-# Fastlane
-#
+## SwiftPM Xcode integration ##
+.xcodeproj/project.xcworkspace/xcuserdata
+.xcodeproj/xcuserdata
+
+## Firebase Crashlytics ##
+*.dSYM.zip
+*.dSYM
+
+## Fastlane ##
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
-# Xcode Patch
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
-
-# Xcode Workspace
-#
-*.xcworkspace/*
-!*.xcworkspace/contents.xcworkspacedata
-!*.xcworkspace/xcshareddata/
-!*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
-
-# Swift Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Misc
+## Other ##
 *.moved-aside
-*.xcuserstate
+*.hmap
+*.ipa
+*.xcuserdatad
+*.orig
+*.lock
+
+## Logs and temporary files ##
+*.log
+*.tmp
 *.swp
-.DS_Store
+*.bak
+*.backup
+*.xcarchive
 
-# Simulator logs
-~/Library/Logs/CoreSimulator/
+# Xcode 14 build artefacts
+*.xcframework
 
-# IDE
-.idea/
-*.iml
+# SwiftPM cache
+.swiftpm/xcode
+
+# SPM binary artifacts
+Artifacts/
+
+# Env files
+.env
 
 # Firebase
 
