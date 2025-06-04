@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Talkind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg 2" translatesAutoresizingMaskIntoConstraints="NO" id="tys-zw-DQC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="5gp-2A-gJx"/>
+                                    <constraint firstAttribute="height" constant="852" id="l91-XT-uBW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to new adventures." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPb-Ru-yUm">
+                                <rect key="frame" x="48" y="185" width="297" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="E4W-ty-F94"/>
+                                    <constraint firstAttribute="width" constant="297" id="ghW-qz-hCE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" red="0.50980395079999996" green="0.39215683940000001" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The warmest chats are waiting for you here. Ready to share your feelings, laughs, and the freshest news? Let the words dance!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-E2-NJ8">
+                                <rect key="frame" x="86" y="349" width="259" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="Dge-9t-QjO"/>
+                                    <constraint firstAttribute="width" constant="259" id="nGY-37-zQE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.52941179279999995" green="0.38431376220000002" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-Lh-G2G">
+                                <rect key="frame" x="181" y="529" width="164" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="5ci-Nw-LR0"/>
+                                    <constraint firstAttribute="height" constant="36" id="MvG-qk-YAF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Medium"/>
+                                                <font key="NSOriginalFont" size="16" name="GujaratiMT"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Medium"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Started">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Medium"/>
+                                                <font key="NSOriginalFont" size="16" name="GujaratiMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.52941179279999995" green="0.38431376220000002" blue="0.27843138579999999" alpha="0.58999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.28310355544090271" green="0.63682776689529419" blue="0.61982953548431396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eYN-Lh-G2G" firstAttribute="top" secondItem="9Tv-E2-NJ8" secondAttribute="bottom" constant="8" symbolic="YES" id="0Te-Uf-48V"/>
+                            <constraint firstItem="tys-zw-DQC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="0nU-OY-FCx"/>
+                            <constraint firstItem="tys-zw-DQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1GV-IR-s58"/>
+                            <constraint firstItem="eYN-Lh-G2G" firstAttribute="top" secondItem="fPb-Ru-yUm" secondAttribute="bottom" constant="126" id="3uL-xs-0qV"/>
+                            <constraint firstItem="fPb-Ru-yUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="5Sa-Tg-I47"/>
+                            <constraint firstItem="eYN-Lh-G2G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="8Uu-l5-a0q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eYN-Lh-G2G" secondAttribute="trailing" constant="48" id="HW8-hG-G0s"/>
+                            <constraint firstItem="tys-zw-DQC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jcw-n2-f2g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eYN-Lh-G2G" secondAttribute="bottom" constant="253" id="dw8-f1-CKp"/>
+                            <constraint firstItem="fPb-Ru-yUm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="ege-CA-f1P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Tv-E2-NJ8" secondAttribute="trailing" constant="48" id="kOa-gC-ObF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPb-Ru-yUm" secondAttribute="trailing" constant="48" id="meo-Tt-Zgp"/>
+                            <constraint firstItem="9Tv-E2-NJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="nFK-cb-TBp"/>
+                            <constraint firstItem="9Tv-E2-NJ8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="290" id="s3w-kF-ASP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tys-zw-DQC" secondAttribute="bottom" constant="-34" id="sVj-l0-6rj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="103.05343511450381" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg 2" width="720" height="1251"/>
+    </resources>
 </document>
