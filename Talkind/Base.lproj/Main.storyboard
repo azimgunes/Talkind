@@ -3,14 +3,16 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Talkind" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Talkind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +74,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.52941179279999995" green="0.38431376220000002" blue="0.27843138579999999" alpha="0.58999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toLoginVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpc-Wo-OQi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,13 +99,99 @@
                             <constraint firstAttribute="bottomMargin" secondItem="tys-zw-DQC" secondAttribute="bottom" constant="-34" id="sVj-l0-6rj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="9Tv-E2-NJ8" id="yxm-pF-VLp"/>
+                        <outlet property="toLoginVCButton" destination="eYN-Lh-G2G" id="wXS-v4-mk3"/>
+                        <outlet property="welcomeLabel" destination="fPb-Ru-yUm" id="7s3-NS-be1"/>
+                        <segue destination="NdM-Oo-3lS" kind="presentation" identifier="toLoginVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="CRB-Vb-Gd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="103.05343511450381" y="-34.507042253521128"/>
         </scene>
+        <!--LoginVC-->
+        <scene sceneID="oLz-sk-e2J">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NdM-Oo-3lS" customClass="LoginVC" customModule="Talkind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzM-zW-Lyb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginvc" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-bK-h2d">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P82-kx-lzw">
+                                <rect key="frame" x="36" y="307" width="320" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="91w-6o-QHC"/>
+                                    <constraint firstAttribute="height" constant="36" id="BpG-lT-OLI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="Google">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Bold"/>
+                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Bold"/>
+                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="with">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Bold"/>
+                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Bold"/>
+                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Google">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Futura-Bold"/>
+                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" name="label"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toLoginVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VP1-Ky-fcj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZXw-qZ-D0O"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLs-Z5-cdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849.61832061068696" y="-35.211267605633807"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Google" width="24" height="24"/>
         <image name="bg 2" width="720" height="1251"/>
+        <image name="loginvc" width="736" height="981"/>
+        <namedColor name="label">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
