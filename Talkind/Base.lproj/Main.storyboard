@@ -3,9 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -103,7 +101,7 @@
                         <outlet property="infoLabel" destination="9Tv-E2-NJ8" id="yxm-pF-VLp"/>
                         <outlet property="toLoginVCButton" destination="eYN-Lh-G2G" id="wXS-v4-mk3"/>
                         <outlet property="welcomeLabel" destination="fPb-Ru-yUm" id="7s3-NS-be1"/>
-                        <segue destination="NdM-Oo-3lS" kind="presentation" identifier="toLoginVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="CRB-Vb-Gd2"/>
+                        <segue destination="NdM-Oo-3lS" kind="presentation" identifier="toLoginVC" id="DXk-8z-pQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,48 +116,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginvc" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-bK-h2d">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P82-kx-lzw">
-                                <rect key="frame" x="36" y="307" width="320" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="164" id="91w-6o-QHC"/>
-                                    <constraint firstAttribute="height" constant="36" id="BpG-lT-OLI"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P82-kx-lzw">
+                                <rect key="frame" x="36" y="262" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="0.23202090231788081" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Google">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Sign">
+                                        <fragment content="Login">
                                             <attributes>
                                                 <font key="NSFont" size="16" name="Futura-Bold"/>
-                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <font key="NSFont" size="16" name="Futura-Bold"/>
-                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="with">
-                                            <attributes>
-                                                <font key="NSFont" size="16" name="Futura-Bold"/>
-                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <font key="NSFont" size="16" name="Futura-Bold"/>
-                                                <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Google">
+                                        <fragment content=" with Google">
                                             <attributes>
                                                 <font key="NSFont" size="16" name="Futura-Bold"/>
                                                 <font key="NSOriginalFont" size="16" name="Futura-Bold"/>
@@ -167,16 +136,86 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                    <color key="baseBackgroundColor" name="label"/>
+                                    <color key="baseBackgroundColor" red="0.270588249" green="0.25098040700000002" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="toLoginVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VP1-Ky-fcj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-M9-BT4">
+                                <rect key="frame" x="184" y="332" width="24" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.86274516580000005" green="0.8078432083" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-nl-Hfg">
+                                <rect key="frame" x="36" y="384" width="320" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="0.23202090231788081" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="2KI-jm-SRK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTa-MV-OGd">
+                                <rect key="frame" x="36" y="459" width="320" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="0.23202090231788081" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="LqF-hj-1B4"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ls-d5-6fM">
+                                <rect key="frame" x="159" y="525" width="75" height="35"/>
+                                <color key="backgroundColor" red="0.270588249" green="0.25098040700000002" blue="0.231372565" alpha="0.2218025662251655" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD4-d1-4Rq">
+                                <rect key="frame" x="122" y="797" width="148" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="O0E-fy-DFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Register Now!"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZXw-qZ-D0O"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" red="0.66043692827224731" green="0.48478800058364868" blue="0.3007672131061554" alpha="0.75346647350993379" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="trailing" secondItem="hhN-nl-Hfg" secondAttribute="trailing" id="34F-N5-dz1"/>
+                            <constraint firstItem="hhN-nl-Hfg" firstAttribute="leading" secondItem="lTa-MV-OGd" secondAttribute="leading" id="3VJ-nC-fVE"/>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="leading" secondItem="hhN-nl-Hfg" secondAttribute="leading" id="4Ry-ST-MS0"/>
+                            <constraint firstItem="lTa-MV-OGd" firstAttribute="top" secondItem="hhN-nl-Hfg" secondAttribute="bottom" constant="26" id="56T-WI-MIW"/>
+                            <constraint firstItem="pD4-d1-4Rq" firstAttribute="leading" secondItem="ZXw-qZ-D0O" secondAttribute="leading" constant="122" id="9cv-fe-hiE"/>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="centerX" secondItem="Ibf-M9-BT4" secondAttribute="centerX" id="G4R-GJ-wxE"/>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="top" secondItem="ZXw-qZ-D0O" secondAttribute="top" constant="262" id="JUS-4y-A8W"/>
+                            <constraint firstItem="hhN-nl-Hfg" firstAttribute="trailing" secondItem="lTa-MV-OGd" secondAttribute="trailing" id="N7x-PB-7iW"/>
+                            <constraint firstItem="Ibf-M9-BT4" firstAttribute="top" secondItem="P82-kx-lzw" secondAttribute="bottom" constant="32" id="Qgy-od-pPd"/>
+                            <constraint firstItem="5ls-d5-6fM" firstAttribute="top" secondItem="lTa-MV-OGd" secondAttribute="bottom" constant="17" id="VAJ-56-1Lp"/>
+                            <constraint firstItem="lTa-MV-OGd" firstAttribute="centerX" secondItem="5ls-d5-6fM" secondAttribute="centerX" id="ZJd-Bf-imM"/>
+                            <constraint firstItem="Ibf-M9-BT4" firstAttribute="leading" secondItem="ZXw-qZ-D0O" secondAttribute="leading" constant="184" id="kAM-hA-YGh"/>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="centerX" secondItem="kzM-zW-Lyb" secondAttribute="centerX" id="oTQ-1A-b4i"/>
+                            <constraint firstItem="ZXw-qZ-D0O" firstAttribute="bottom" secondItem="pD4-d1-4Rq" secondAttribute="bottom" constant="20" id="pIr-ts-zFt"/>
+                            <constraint firstItem="hhN-nl-Hfg" firstAttribute="top" secondItem="Ibf-M9-BT4" secondAttribute="bottom" constant="29" id="pzl-k2-xO3"/>
+                            <constraint firstItem="5ls-d5-6fM" firstAttribute="centerX" secondItem="pD4-d1-4Rq" secondAttribute="centerX" id="udl-dd-6An"/>
+                            <constraint firstItem="P82-kx-lzw" firstAttribute="leading" secondItem="ZXw-qZ-D0O" secondAttribute="leading" constant="36" id="zrb-LU-Z55"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="hhN-nl-Hfg" id="gv9-zh-wsA"/>
+                        <outlet property="googleButton" destination="P82-kx-lzw" id="U3Z-X8-XLL"/>
+                        <outlet property="passwordTextField" destination="lTa-MV-OGd" id="FHa-gq-Gac"/>
+                        <outlet property="signButton" destination="5ls-d5-6fM" id="wgn-lc-9hS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLs-Z5-cdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,12 +225,5 @@
     <resources>
         <image name="Google" width="24" height="24"/>
         <image name="bg 2" width="720" height="1251"/>
-        <image name="loginvc" width="736" height="981"/>
-        <namedColor name="label">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </namedColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
