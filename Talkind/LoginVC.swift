@@ -42,17 +42,24 @@ class LoginVC: UIViewController {
         
         //Text Fields
         
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        emailTextField.layer.cornerRadius = 15
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
+        emailTextField.layer.cornerRadius = 10
         
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        passwordTextField.layer.cornerRadius = 15
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGray])
+        passwordTextField.layer.cornerRadius = 10
     }
     
     
     @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
-        let WelcomeVC = storyboard?.instantiateViewController(withIdentifier: "toWelcomeVC") as! WelcomeVC
-        self.navigationController?.pushViewController(WelcomeVC, animated: true)
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let WelcomeVC = storyBoard.instantiateViewController(withIdentifier: "welcomeVC") as? WelcomeVC {
+            let navController = UINavigationController(rootViewController: WelcomeVC)
+            navController.modalPresentationStyle = .fullScreen
+            navController.modalTransitionStyle = .coverVertical
+            
+            self.present(navController, animated: true)
+        }
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
