@@ -34,8 +34,6 @@ class LoginVC: UIViewController {
         
         //Buttons
         
-        googleButton.layer.cornerRadius = 10
-        googleButton.clipsToBounds = true
         
         
         signButton.layer.cornerRadius = 10
@@ -50,4 +48,17 @@ class LoginVC: UIViewController {
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         passwordTextField.layer.cornerRadius = 15
     }
+    
+    
+    @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
+        let WelcomeVC = storyboard?.instantiateViewController(withIdentifier: "toWelcomeVC") as! WelcomeVC
+        self.navigationController?.pushViewController(WelcomeVC, animated: true)
+    }
+    
+    @IBAction func registerButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toRegisterVC", sender: self)
+
+        
+    }
+    
 }
