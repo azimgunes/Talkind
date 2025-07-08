@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class LoginVC: UIViewController {
     
@@ -25,6 +26,8 @@ class LoginVC: UIViewController {
         
     
         Extensions()
+        dismissKeyboard()
+        keyboardObserver()
     }
  
 
@@ -66,6 +69,22 @@ class LoginVC: UIViewController {
         performSegue(withIdentifier: "toRegisterVC", sender: self)
 
         
+    }
+    
+    
+    @IBAction func signButtonTapped(_ sender: UIButton) {
+        guard let email = emailTextField.text,  !email.isEmpty else {
+            ProgressHUD.failed("Email is empty.")
+            return
+        }
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            ProgressHUD.failed("Password is empty.")
+            return
+        }
+        ProgressHUD.animate("Loading...")
+        ProgressHUD.colorHUD = .clear
+        ProgressHUD.colorAnimation = .black
+        ProgressHUD.colorStatus = .black
     }
     
 }

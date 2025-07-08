@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class RegisterVC: UIViewController {
     
@@ -26,6 +27,11 @@ class RegisterVC: UIViewController {
         super.viewDidLoad()
 
         Extensions()
+        
+        dismissKeyboard()
+        
+        keyboardObserver()
+    
     }
     
 
@@ -63,4 +69,27 @@ class RegisterVC: UIViewController {
         
     }
     
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        
+        guard let name = nameTextField.text, !name.isEmpty else {
+            ProgressHUD.failed("Name is empty!")
+            return
+        }
+        guard let username = usernameTextField.text, !username.isEmpty else {
+            ProgressHUD.failed("Username is empty!")
+            return
+        }
+        guard let mail = mailTextField.text, !mail.isEmpty else {
+            ProgressHUD.failed("Mail is empty!")
+            return
+        }
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            ProgressHUD.failed("Password is empty!")
+            return
+        }
+        ProgressHUD.animate("Loading..")
+        ProgressHUD.colorHUD = .clear
+        ProgressHUD.colorAnimation = .black
+        ProgressHUD.colorStatus = .black
+    }
 }
